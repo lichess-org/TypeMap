@@ -2,7 +2,7 @@ inThisBuild(
   Seq(
     scalaVersion  := "3.10.0",
     versionScheme := Some("early-semver"),
-    version       := "0.2.2",
+    version       := "0.3.0",
     organization  := "org.lichess",
     licenses += ("MIT" -> uri("https://opensource.org/licenses/MIT")),
     publishTo     := Option(Resolver.file("file", new File(sys.props.getOrElse("publishTo", ""))))
