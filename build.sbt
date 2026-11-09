@@ -3,13 +3,12 @@ inThisBuild(
     scalaVersion  := "3.10.0",
     versionScheme := Some("early-semver"),
     version       := "0.3.0",
-    organization  := "org.lichess",
+    organization  := "com.github.lichess-org.typemap",
     licenses += ("MIT" -> uri("https://opensource.org/licenses/MIT")),
     publishTo     := Option(Resolver.file("file", new File(sys.props.getOrElse("publishTo", ""))))
   )
 )
 
-// from scalachess
 val commonSettings = Seq(
   scalacOptions := Seq(
     "-encoding",

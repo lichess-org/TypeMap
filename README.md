@@ -84,3 +84,9 @@ assertEquals(map.get[String], None)
 // does not compile, as expected
 map.get[Float]
 ````
+
+## Release
+
+1. Bump version in `build.sbt`.
+2. Commit the version bump and push to master.
+3. `gh release create X.Y.Z`
