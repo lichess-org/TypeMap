@@ -1,10 +1,10 @@
 inThisBuild(
   Seq(
-    scalaVersion  := "3.7.0",
+    scalaVersion  := "3.10.0",
     versionScheme := Some("early-semver"),
     version       := "0.2.2",
     organization  := "org.lichess",
-    licenses += ("MIT" -> url("https://opensource.org/licenses/MIT")),
+    licenses += ("MIT" -> uri("https://opensource.org/licenses/MIT")),
     publishTo     := Option(Resolver.file("file", new File(sys.props.getOrElse("publishTo", ""))))
   )
 )
@@ -31,7 +31,7 @@ lazy val typemap = project
   .settings(
     commonSettings,
     name                                   := "typemap",
-    libraryDependencies += "org.scalameta" %% "munit" % "1.0.0" % Test
+    libraryDependencies += "org.scalameta" %% "munit" % "1.3.6" % Test
   )
 
 lazy val examples = project
@@ -53,4 +53,3 @@ addCommandAlias("build", toAllProjects("compile"))
 addCommandAlias("fmt", toAllProjects("scalafmtAll"))
 addCommandAlias("fmtCheck", toAllProjects("scalafmtCheckAll"))
 addCommandAlias("test", toAllProjects("test"))
-
